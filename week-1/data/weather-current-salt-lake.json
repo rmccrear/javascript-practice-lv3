@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "rh": 56,
+      "pod": "d",
+      "lon": -111.8911,
+      "pres": 1018.3,
+      "timezone": "America/Denver",
+      "ob_time": "2023-09-27 18:00",
+      "country_code": "US",
+      "clouds": 12,
+      "vis": 10,
+      "wind_spd": 3.6,
+      "wind_cdir_full": "southwest",
+      "wind_cdir": "SW",
+      "temp": 25.7,
+      "app_temp": 25.3,
+      "station": "CMX",
+      "datetime": "2023-09-27:18",
+      "precip": 0,
+      "ghi": 723.2,
+      "dni": 897.1,
+      "dhi": 140.5,
+      "solar_rad": 723.2,
+      "city_name": "Salt Lake City",
+      "sunrise": "13:10",
+      "sunset": "02:01",
+      "state_code": "UT",
+      "lat": 40.7608,
+      "slp": 1019.2,
+      "wind_dir": 220,
+      "elev_angle": 50.1,
+      "dewpt": 16.1,
+      "snow": 0,
+      "uv": 7.9,
+      "aqi": 42,
+      "weather": {
+        "icon": "c02d",
+        "code": "802",
+        "description": "Scattered clouds"
+      },
+      "ts": 1695832800,
+      "h_angle": 0,
+      "dewpt": 16.1
+    }
+  ],
+  "count": 1
+}

@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "rh": 87,
+      "pod": "d",
+      "lon": -78.63861,
+      "pres": 1012.7,
+      "timezone": "America/New_York",
+      "ob_time": "2023-09-27 17:45",
+      "country_code": "US",
+      "clouds": 90,
+      "ts": 1632762300,
+      "solar_rad": 145.3,
+      "state_code": "NC",
+      "city_name": "Raleigh",
+      "wind_spd": 1.5,
+      "wind_cdir_full": "east-southeast",
+      "wind_cdir": "ESE",
+      "slp": 1013.2,
+      "vis": 8,
+      "h_angle": -5,
+      "sunset": "19:01",
+      "dni": 500.6,
+      "dewpt": 21.3,
+      "snow": 0,
+      "uv": 2,
+      "precip": 0,
+      "wind_dir": 120,
+      "sunrise": "07:07",
+      "ghi": 176.2,
+      "dhi": 88.5,
+      "aqi": 50,
+      "lat": 35.7721,
+      "weather": {
+        "icon": "c04d",
+        "code": 804,
+        "description": "Overcast clouds"
+      },
+      "datetime": "2023-09-27:17",
+      "temp": 22.1,
+      "station": "RDU",
+      "elev_angle": 23.7,
+      "app_temp": 22.6
+    }
+  ],
+  "count": 1
+}
