@@ -6,9 +6,9 @@ Classes, introduced in ES6, use the class syntax and allow for more structured a
 
 We will practice making classes and using them to filter out the data we would get from APIs.
 
-## TODOS
+## TODOs
 
-## Checkpoint 1
+### Checkpoint 1
 
 1. Look at the everyday-objects files (everyday-objects.js and everyday-objects-run.js).
 2. Look at the example (Car)
@@ -20,7 +20,7 @@ Note: use `npm test -- -t "Everyday Objects"` to run only the Everyday Objects t
 
 Note: use 'q' to exit tests in the terminal.
 
-## Checkpoint 2
+### Checkpoint 2
 
 1. Look at the EXAMPLE pokemon files (pokemon-run.js and pokemon.js).
 2. Run pokemon-run.js with `node pokemon-run.js`
@@ -34,8 +34,8 @@ Note: use 'q' to exit tests in the terminal.
 Note: use `npm test -- -t "Pokemon"` to run only the Pokemon tests.
 Note: use `npm test -- -t "Weather"` to run only the Weather tests.
 
-## Checkpoint 3
+### Checkpoint 3
 
-1. Complete the TODOs for openfoodfacts.
+1. Complete the TODOs for OpenFoodFacts.
 
 Note: use `npm test -- -t "OpenFoodFacts"` to run only the Food Facts tests.
