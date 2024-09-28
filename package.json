@@ -1,0 +1,14 @@
+{
+  "name": "javascript-practice-lv3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vitest": "^2.1.1"
+  }
+}
