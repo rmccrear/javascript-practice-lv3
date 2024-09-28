@@ -1,17 +1,10 @@
-import charmanderData from "./data/charmander.json" assert { type: 'json' };
-import pikachuData from "./data/pikachu.json" assert { type: 'json' };
-
-// Have a look at data/charmander.data for more details
-console.log("Hi I'm " + charmanderData.name);
-// Have a look at data/pikachu.data for more details
-console.log("Hi I'm " + pikachuData.name);
 
 // EXAMPLE
 // factory function
 
 function createPokemon(data) {
-  let name = data.name;
-  let weight = data.weight;
+  let name = data.name || "Unknown"; 
+  let weight = data.weight || "Unknown";
   let abilities = [];
   for(let i=0; i<data.abilities.length; i++) {
     abilities.push(data.abilities[i].ability.name)
