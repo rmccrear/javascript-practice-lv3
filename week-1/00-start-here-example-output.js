@@ -1,4 +1,4 @@
-import { createCircle, Circle, createDog, Dog } from './objects.js';
+import { createCircle, Circle, createDog, Dog } from './00-start-here-example-objects.js';
 
 // Instances created using the factory functions
 const circle1 = createCircle(5);

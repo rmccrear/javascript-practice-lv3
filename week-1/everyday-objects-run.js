@@ -1,4 +1,4 @@
-import { Car } from "everyday-objects.js";
+import { Car } from "./everyday-objects.js";
 
 // use node everyday-objects.js to try this out.
 // Create instances
