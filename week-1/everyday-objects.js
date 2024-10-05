@@ -29,7 +29,7 @@ class Phone {
 // makeCall(number): Logs "Calling [number] from [brand] [model]."
 // batteryStatus(): Logs "Battery life is at [batteryLife]%."
 getPhoneInfo() {
-  return `${this.brand} ${this.model} ${this.batteryLife}`;
+  console.log(`${this.brand} ${this.model} ${this.batteryLife}%`);
 }
 batteryStatus() {
   console.log(`The battery status of ${this.brand} ${this.model} is now ${this.batteryLife}%.`);
@@ -65,7 +65,7 @@ class Laptop {
     this.ramSize = ramSize;
   }
   bootUp() {
-    return `${this.brand}, ${this.model} is booting up with ${this.ramSize}GB RAM.`;
+    console.log(`${this.brand}, ${this.model} is booting up with ${this.ramSize}GB RAM.`);
   }
   shutDown() {
     console.log(`This ${this.brand} ${this.model} is shutting down.`);
@@ -84,7 +84,7 @@ class Backpack {
     this.capacity = capacity;
   }
   open() {
-    return `Opening this ${this.color}, ${this.brand} backpack is easy. It is lightweight.`
+    console.log(`Opening this ${this.color}, ${this.brand} backpack is easy. It is lightweight.`);
   }
   checkCapacity() {
     console.log(`This ${this.brand} backpack has only a capacity of ${this.capacity} liters.`)
