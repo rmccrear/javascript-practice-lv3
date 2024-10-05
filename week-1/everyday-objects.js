@@ -7,7 +7,7 @@ class Car {
   }
 
   getCarInfo() {
-    return `${this.year} ${this.make} ${this.model}`;
+    return `Car: ${this.year} ${this.make} ${this.model}`;
   }
 
   startEngine() {
@@ -47,7 +47,7 @@ class Book {
     this.pages = pages;
   }
   getSummary() {
-    return `${this.title} by ${this.author}`;
+    return `Book: ${this.title} by ${this.author}`;
   }
   readPage() {
     console.log(`You read a page from ${this.title}.`);
@@ -91,4 +91,4 @@ class Backpack {
   }
 }
 
-export { Car, Phone, Book, Laptop, Backpack };
+export { Car , Phone , Book , Laptop , Backpack };
