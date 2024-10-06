@@ -1,0 +1,27 @@
+// Fully Worked Example
+
+// This example creates an arrow function that logs "Hello, after 2 seconds!" after 2 seconds using setTimeout.
+setTimeout(() => {
+  console.log("Hello, after 2 seconds!");
+}, 2000);
+
+// Problem Set: Arrow Functions with setTimeout
+
+// Instructions: For each problem, create an arrow function to pass into the setTimeout function. 
+// The arrow function should execute after a specified interval and perform the task outlined in the problem description.
+
+// Problem 1: Simple Timeout with a Message
+// Instructions: Create an arrow function that logs "Hello, World!" to the console after 1 second (1000 milliseconds).
+
+// Problem 2: Timeout that Logs a Number
+// Instructions: Create an arrow function that logs the number 42 to the console after 2 seconds (2000 milliseconds).
+
+// Problem 3: Timeout that Adds Two Numbers
+// Instructions: Create an arrow function that adds two numbers, 5 and 7, and logs the result (12) to the console after 3 seconds (3000 milliseconds).
+
+// Problem 4: Timeout that Logs Current Time
+// Instructions: Create an arrow function that logs the current date and time using `new Date().toLocaleString()` after 4 seconds (4000 milliseconds).
+
+// Problem 5: Timeout that Logs a Countdown
+// Instructions: Create a series of arrow functions inside setTimeout that count down from 3 to 1 at 1-second intervals, and finally logs "Go!" after 3 seconds.
+// Hint: You'll need to use 3 different setTimeout calls for this task.
