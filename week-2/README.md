@@ -2,11 +2,11 @@
 
 (See p 124 (p 149 in the PDF) of JavaScript from Beginner to Professional by Laurence Lars Svekis)
 
-## ltdr;
+## tl;dr
 
-tldr; Arrow function are a bit of syntactic sugar on JavaScript functions
+tl;dr: Arrow Functions are a bit of syntactic sugar on JavaScript functions
 
-The let suggest an idiom to change this...
+The Arrow Function syntax lets us write lengthy boilerplate loops in a concise way. Once you know the idiom, it will be easy to read code with one or more loops in them. For example this code can be shortened from this...
 
     let fruits = ['apples', 'bananas', 'cherries', 'dates', 'elderberry'];
     let capitalizedFruits = [];
@@ -15,7 +15,7 @@ The let suggest an idiom to change this...
       capitalizedFruits.push(capitalized);
     }
 
-to this...
+...to this...
 
     let fruits = ['apples', 'bananas', 'cherries', 'dates', 'elderberry'];
     let capitalizedFruits = fruits.map( f => f.toUpperCase() );
@@ -29,7 +29,7 @@ To declare a function, we can use the function keyword like this:
 listing 1:
 
     function boldify(word) {
-      let boldWord = `<b>${word}</b>`;
+      let boldWord = `<b> ${word} </b>`;
       return boldWord;
     }
 
@@ -38,11 +38,11 @@ We can do this with arrow function syntax like this:
 listing 2:
   
     const boldify = (word) => {
-      let boldWord = `<b>${word}</b>`;
+      let boldWord = `<b> ${word} </b>`;
       return boldWord;
     }
 
-This look a bit confusion if you haven't seen that you can assign a function to a variable! What is happening in listing 1 is we are declaring a function called boldify. In listing 2, we first declare a variable called boldify, then assign a function to it.
+This looks a bit confusing if you didn't know that you can assign a function to a variable! What is happening in listing 1 is we are declaring a function called boldify. In listing 2, we first declare a variable called boldify, then assign a function to it. Keep reading to take this step-by-step.
 
 ## Function can be assigned to variables
 
@@ -63,9 +63,9 @@ listing 3:
     formatify = italify;
     console.log(formatify("I am italic!"));
 
-In listing 3, we invoke a function stored in the `formatify` variable. It can be italify or boldify. If we wanted we could declare an `underlinify` or a `strikeoutify` function as well. We could assign them to formatify to indicate the kind of format we want to use. (Note: all we are doing is changing the "name" of the function. But this concept is really important and special!)
+In listing 3, we invoke a function stored in the `formatify` variable. It can be italify or boldify. If we wanted we could declare an `underlinify` or a `strikeoutify` function as well. We could assign them to `formatify` to indicate the kind of format we want to use. (Note: all we are doing is changing the "name" of the function. But this concept is really important and special!)
 
-As an example, lets rewrite listing 3 with arrow functions. This doesn't save a whole lot of space, but it illustrates that few can use arrow functions and "regular" functions interchangeable (in most cases).
+As an example, let's re-write listing 3 with arrow functions. This doesn't save a whole lot of space, but it illustrates that we can use arrow functions and "regular" functions interchangeably (in most cases).
 
     let boldify = (word) => {
       return `<b> ${word} </b>`;
@@ -87,23 +87,23 @@ Where arrow functions come in handy is when we use them in short hand. Let's loo
     }
     document.getElementById("button-1").addEventListener(handleClick);
 
-This could be re-written with an arrow function if a few ways. Let's start...
+This could be re-written with an arrow function in a few different ways. Let's lets start with this...
 
-    function handleClick = () => {
+    const handleClick = () => {
       alert("I was clicked");
     }
     document.getElementById("button-1").addEventListener(handleClick);
 
 If there is only one line, we can shorten this by removing the curly brackets and putting the handleClick on one line. Don't let all the equal signs confuse you. The first is an assignment operator. The second is part of the arrow.
 
-    function handleClick = () => alert("I was clicked");
+    const handleClick = () => alert("I was clicked");
     document.getElementById("button-1").addEventListener(handleClick);
 
 We can even forgo setting the variable and put it all in one line.
 
     document.getElementById("button-1").addEventListener( () => alert("I was clicked") );
 
-This "one line" idiom is what arrow function were made for.
+This "one line" idiom is what arrow functions were made for.
 
 ## Using arrow functions with array functions.
 
@@ -121,26 +121,26 @@ Let's say you want to convert a list in JavaScript to a list in HTML. You could 
     for(let i=0; i<fruitElements.length; i++) {
       fruitsHTML += fruitElements[i] + "\n";
     }
-    document.getElementByName("ul").innerHTML = htmlLi;
+    document.querySelector("ul").innerHTML = fruitsHTML;
 
 But we can shorten this with the map method. According to the [specs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), the map method "creates a new array populated with the results of calling a provided function on every element in the calling array." This is exactly what the above for loop is doing. But it can be done in idiomatic functional JavaScript concisely like this:
 
     let fruits = ['apples', 'bananas', 'cherries', 'dates', 'elderberry'];
     let fruitList = fruits.map( fruit => `<li> ${fruit} </li>` );
-    let fruitsHTML = fruits.join("\n");
-    document.getElementByName("ul").innerHTML = fruitsHTML;
+    let fruitHTML = fruitList.join("\n");
+    document.querySelector("ul").innerHTML = fruitHTML;
 
 Note that the `join` [method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) "returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string."
 
 This is what it would look like in one line in a fluent idiomatic style...
 
     let fruits = ['apples', 'bananas', 'cherries', 'dates', 'elderberry'];
-    document.getElementByName("ul").innerHTML = fruits.map( fruit => `<li> ${fruit} </li>`).join("\n");
+    document.querySelector("ul").innerHTML = fruits.map( fruit => `<li> ${fruit} </li>`).join("\n");
 
 Once you see the idiom, you'll be able to see at a glance what is meant by the above code, rather than needing to read through all the `for` statements. Sometimes we use whitespace to make it easier to see...
 
     let fruits = ['apples', 'bananas', 'cherries', 'dates', 'elderberry'];
-    document.getElementByName("ul").innerHTML = fruits
+    document.querySelector("ul").innerHTML = fruits
       .map( fruit => `<li> ${fruit} </li>`)
       .join("\n");
 
