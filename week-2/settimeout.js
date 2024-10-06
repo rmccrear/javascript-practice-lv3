@@ -1,4 +1,10 @@
-// Fully Worked Example
+// Arrow functions and setTimeout
+
+// setTimeout is a JavaScript function that allows you to execute a piece of code or a function after a specified delay (in milliseconds). It takes two arguments:
+
+// A function (or code snippet) to execute.
+// The delay in milliseconds before the function is executed.
+// The function runs only once after the specified delay.
 
 // This example creates an arrow function that logs "Hello, after 2 seconds!" after 2 seconds using setTimeout.
 setTimeout(() => {
