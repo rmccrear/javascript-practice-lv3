@@ -4,7 +4,7 @@
 
 ### Complete the Problem Sets
 
-You will find the problem sets in the following files. Open each of these files in your editor and write your solutions:
+You will find the problem sets in the following files. Open each of these files in your editor and write your solutions. As you go, try-out each function you write. Complete one function before moving on to the next. Be meticulous. Celebrate each small victory. Commit after each function is complete. After you finish a few of these problems correctly, it will get easier and you will have more confidence, and will move much more quickly in the long run, if you do.
 
 #### arrow-functions.js:
 
