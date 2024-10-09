@@ -48,9 +48,9 @@ function capitalize(str) {
   return str.toUpperCase();
 };
 
-let capitalize2 = str => str.toUpperCase;
+let capitalize2 = (str) => str.toUpperCase;
 
-console.log(capitalize2('minou'));
+console.log(capitalize2("minou"));
 
 // Problem 4: Refactor Function with No Parameters
 // Instructions: Refactor the `greet` function into an arrow function. Arrow functions without parameters require empty parentheses. Name the refactored function `greet2`.
@@ -75,4 +75,4 @@ let calculateArea2 = (length, width) => (length*width);
 console.log(calculateArea2(5, 3)); // Expected output: Area: 15, returns: 15
 
 // Exporting the arrow functions
-export { square2, double2, add2, greet2, calculateArea2 };
+export { square2, double2, add2, greet2, calculateArea2, capitalize2 };

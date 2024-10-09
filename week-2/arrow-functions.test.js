@@ -33,6 +33,7 @@ describe('Basic Arrow Functions', () => {
       expect(capitalize2("hello")).toBe("HELLO");
       expect(capitalize2("world")).toBe("WORLD");
       expect(capitalize2("test")).toBe("TEST");
+
     });
   });
 
