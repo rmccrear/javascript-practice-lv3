@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest';
 // Import the functions to test
-import { square2, double2, add2, capitalize2, greet2, calculateArea2 } from './arrow-functions.js'; // Replace with actual file name
+import { square2, double2, add2, greet2, capitalize2, calculateArea2 } from './arrow-functions.js'; // Replace with actual file name
 
 describe('Basic Arrow Functions', () => {
 

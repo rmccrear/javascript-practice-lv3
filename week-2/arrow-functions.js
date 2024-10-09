@@ -1,7 +1,5 @@
 // Fully Worked Example
 
-// arrow function blog https://blog.robertm.cc/2024/10/05/arrow-functions-101.html
-
 // Original function: 
 // This function takes a number as an argument and returns that number squared.
 
@@ -14,9 +12,7 @@ let square2 = (n) => n*n;
 // Usage
 console.log(square2(5)); // Expected output: 25
 
-
 // Problem Set: Refactor to Arrow Functions
-
 // Instructions: For each problem, refactor the traditional function into an arrow function.
 // Name the new function with a "2" after the original name. For example, if the function is called `square`, the arrow function should be called `square2`.
 
@@ -37,20 +33,18 @@ function add(a, b) {
 }
 let add2 = (a, b) => a+b;
 
-// Usage
 console.log(add2(3, 7)); // Expected output: 10
 
 // Problem 3: Convert String to Uppercase
 // Instructions: Refactor the `capitalize` function into an arrow function. Use the `toUpperCase` method to return the string in all uppercase. Name the refactored function `capitalize2`.
 
-
-function capitalize(str) {
+//function capitalize(str) {
+//  return str.toUpperCase();    output: [Function, oject] 
+//};
+let capitalize2 = str => {
   return str.toUpperCase();
 };
-
-let capitalize2 = (str) => str.toUpperCase;
-
-console.log(capitalize2("minou"));
+console.log(capitalize2("minou"));  //correct output; MINOU
 
 // Problem 4: Refactor Function with No Parameters
 // Instructions: Refactor the `greet` function into an arrow function. Arrow functions without parameters require empty parentheses. Name the refactored function `greet2`.
@@ -58,7 +52,6 @@ function greet() {
   return "bonjour, world!";
 }
 let greet2 = greet => "Bonjour, World";
-
 // Usage
 console.log(greet2()); // Expected output: "Hello, world!"
 
@@ -75,4 +68,4 @@ let calculateArea2 = (length, width) => (length*width);
 console.log(calculateArea2(5, 3)); // Expected output: Area: 15, returns: 15
 
 // Exporting the arrow functions
-export { square2, double2, add2, greet2, calculateArea2, capitalize2 };
+export { square2, double2, add2, capitalize2, greet2, calculateArea2 };
