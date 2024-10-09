@@ -1,8 +1,8 @@
 let fruits = ['apples', 'bananas', 'cherries', 'dates', 'elderberry'];
 let capitalizedFruits = [];
 for(let i=0; i<fruits.length; i++) {
-  let capitalized = fruits[i].toUpperCase();
-  capitalizedFruits.push(capitalized);
+let capitalized = fruits[i].toUpperCase();
+capitalizedFruits.push(capitalized);
 }
 
 console.log(capitalizedFruits)
@@ -15,11 +15,11 @@ console.log(capFruits);
 
 
 function boldify(word) {
-  return `<b> ${word} </b>`;
+return `<b> ${word} </b>`;
 }
 
 function italify(word) {
-  return `<i> ${word} </i>`;
+return `<i> ${word} </i>`;
 }
 
 let formatify = boldify;
