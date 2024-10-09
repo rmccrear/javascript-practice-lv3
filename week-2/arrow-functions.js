@@ -1,17 +1,16 @@
 // Fully Worked Example
 
-// Original function: 
+// Original function:
 // This function takes a number as an argument and returns that number squared.
 function square(n) {
   return n * n;
 }
 
 // Refactored function using arrow function syntax and renamed with "2":
-let square2 = (n) => n*n;
+let square2 = (n) => n * n;
 
 // Usage
 console.log(square2(5)); // Expected output: 25
-
 
 // Problem Set: Refactor to Arrow Functions
 
@@ -68,4 +67,4 @@ let calculateArea2;
 console.log(calculateArea2(5, 3)); // Expected output: Area: 15, returns: 15
 
 // Exporting the arrow functions
-export { square2, double2, add2, greet2, calculateArea2 };
+export { square2, double2, add2, greet2, calculateArea2, capitalize2 };
