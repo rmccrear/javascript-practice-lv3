@@ -22,8 +22,10 @@ console.log(square2(5)); // Expected output: 25
 // Instructions: Refactor the `double` function into an arrow function. If there is only one argument, parentheses can be omitted. Name the refactored function `double2`.
 function double(x) {
   return x * 2;
-}
-let double2;
+
+
+  // Refactored function using arrow function syntax and renamed with "2":
+let double2 = (x) => x * 2;
 
 // Usage
 console.log(double2(4)); // Expected output: 8
