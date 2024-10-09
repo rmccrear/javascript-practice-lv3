@@ -1,5 +1,7 @@
 // Fully Worked Example
 
+// arrow function blog https://blog.robertm.cc/2024/10/05/arrow-functions-101.html
+
 // Original function: 
 // This function takes a number as an argument and returns that number squared.
 function square(n) {
