@@ -42,19 +42,22 @@ console.log(add2(3, 7)); // Expected output: 10
 
 // Problem 3: Convert String to Uppercase
 // Instructions: Refactor the `capitalize` function into an arrow function. Use the `toUpperCase` method to return the string in all uppercase. Name the refactored function `capitalize2`.
+
+
 function capitalize(str) {
   return str.toUpperCase();
-}
-let capitalize2 = (str) => str.toUpperCase;
+};
 
-console.log(capitalize2("minou"));
+let capitalize2 = str => str.toUpperCase;
+
+console.log(capitalize2('minou'));
 
 // Problem 4: Refactor Function with No Parameters
 // Instructions: Refactor the `greet` function into an arrow function. Arrow functions without parameters require empty parentheses. Name the refactored function `greet2`.
 function greet() {
-  return "Hello, world!";
+  return "bonjour, world!";
 }
-let greet2 = greet => "Hello, World";
+let greet2 = greet => "Bonjour, World";
 
 // Usage
 console.log(greet2()); // Expected output: "Hello, world!"
@@ -62,7 +65,7 @@ console.log(greet2()); // Expected output: "Hello, world!"
 // Problem 5: Complex Refactor with Multiple Statements
 // Instructions: Refactor the `calculateArea` function into an arrow function. Retain curly braces and the return statement, and preserve the console.log statement inside the function. Name the refactored function `calculateArea2`.
 function calculateArea(length, width) {
-  const area = length*width;
+  const area = length * width;
   console.log("Area:", area);
   return area;
 }
