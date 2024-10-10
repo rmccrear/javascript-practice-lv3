@@ -3,6 +3,10 @@
 ## Objective
 In this project, you'll create classes in JavaScript using **getters** and **setters** to control access and validation of class properties. You’ll work with three different classes: a **Car** class (provided as an example), a **Pet** class, and a **Book** class.
 
+## References
+
+[Getters and Setters on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get#using_getters_in_classes)
+
 ---
 
 ## Requirements
