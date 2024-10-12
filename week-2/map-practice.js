@@ -12,17 +12,22 @@ console.log(fruitLengths); // Expected output: [5, 6, 6]
 // Instructions: For each problem, use the `map` method and an arrow function to perform the requested operation on the array.
 
 // Problem 1: Convert numbers to their squares
-// Instructions: Use `map` with an arrow function to return a new array where each number is squared.
-const numbers = [1, 2, 3, 4, 5];
-// Your code here
+// Instructions: Use `map` with an arrow function to return a new array where each number is squared
 
+const numbers = [1, 2, 3, 4, 5];
+const squared = numbers.map(number => number ** 2);
+// Your code here
+console.log(squared);
 // Expected output: [1, 4, 9, 16, 25]
 
 
 // Problem 2: Capitalize strings in an array
 // Instructions: Use `map` with an arrow function to return a new array where each string in the array is capitalized.
-const fruits = ["apple", "banana", "cherry", "date"];
+const fruits = ["apple", "banana", "cherry", "dragon fruit"];
 // Your code here
+const capitalizedFruits = fruits.map(fruit => fruit.toUpperCase());
+
+console.log(capitalizedFruits);
 
 // Expected output: ["APPLE", "BANANA", "CHERRY", "DATE"]
 
@@ -31,6 +36,9 @@ const fruits = ["apple", "banana", "cherry", "date"];
 // Instructions: Use `map` with an arrow function to return a new array where each boolean value is converted to a string.
 const booleans = [true, false, true, false];
 // Your code here
+const stringBooleans = booleans.map(boolean => String(boolean));
+
+console.log(stringBooleans);
 
 // Expected output: ["true", "false", "true", "false"]
 
@@ -39,6 +47,9 @@ const booleans = [true, false, true, false];
 // Instructions: Use `map` with an arrow function to return a new array where 10 is added to each number.
 const moreNumbers = [10, 20, 30, 40];
 // Your code here
+const addedNumbers = moreNumbers.map(number => number + 10);
+
+console.log(addedNumbers);
 
 // Expected output: [20, 30, 40, 50]
 
@@ -52,10 +63,9 @@ const people = [
   { name: "Diana", age: 40 }
 ];
 // Your code here
-
+const names = people.map(person => person.name);
 // Expected output: ["Alice", "Bob", "Charlie", "Diana"]
-
-
+console.log(names);
 // Problem 6: Return a string with the person's name and age
 // Instructions: Use `map` with an arrow function to return a new array where each element is a string formatted as "Name is Age years old".
 // Example: "Alice is 25 years old"
@@ -66,5 +76,6 @@ const peopleWithAges = [
   { name: "Diana", age: 40 }
 ];
 // Your code here
-
+const yearsOld = peopleWithAges.map(person => `${person.name} is ${person.age} years old.`);
 // Expected output: ["Alice is 25 years old", "Bob is 30 years old", "Charlie is 35 years old", "Diana is 40 years old"]
+console.log(yearsOld);
