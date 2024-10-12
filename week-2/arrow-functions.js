@@ -55,7 +55,7 @@ console.log(capitalize2("omg"));
 function greet() {
   return "Hello, world!";
 }
-let greet2 = () => "Hello, World"
+let greet2 = () => "Hello, world!"
 
 // Usage
 console.log(greet2()); // Expected output: "Hello, world!"
@@ -78,4 +78,4 @@ let calculateArea2 = (length, width) => {
 console.log(calculateArea2(5, 3)); // Expected output: Area: 15, returns: 15
 
 // Exporting the arrow functions
-export { square2, double2, add2, greet2, calculateArea2 };
+export { square2, double2, add2, capitalize2, greet2, calculateArea2 };
