@@ -26,12 +26,14 @@ console.log(checkPositiveOrNegative(-5));  // Expected output: "Negative"
 
 function checkEmptyString(str) {
   // TODO: Write your solution here
-
+  return str.length === 0 ? "Empty String" : "Non-empty String";
 }
 
 // Example usage
 // console.log(checkEmptyString(""));     // Expected output: "Empty String"
 // console.log(checkEmptyString("Hello")); // Expected output: "Non-empty String"
+console.log(checkEmptyString(""));
+console.log(checkEmptyString("Hello"));
 
 // TASK 1: Ternary Operator Exercise 2
 // TODO: Use the ternary operator to check if a number is divisible by 5.
@@ -39,12 +41,15 @@ function checkEmptyString(str) {
 
 function checkDivisibleByFive(number) {
   // TODO: Write your solution here
+  return number%5 === 0 ? "Divisible by 5" : "Not Divisible by 5";
 
 }
 
 // Example usage
 // console.log(checkDivisibleByFive(10));  // Expected output: "Divisible by 5"
 // console.log(checkDivisibleByFive(7));   // Expected output: "Not Divisible by 5"
+console.log(checkDivisibleByFive(15));
+console.log(checkDivisibleByFive(7));
 
 
 // TASK 2: Array Destructuring Example
@@ -57,25 +62,36 @@ console.log(`First City: ${city1}, Second City: ${city2}`);  // Expected output:
 
 // TASK 2: Array Destructuring Exercise 1
 // TODO: Destructure an array of three animals and log the second and third animals.
-
 const animals = ["Lion", "Tiger", "Elephant"];
+
 // TODO: Use array destructuring to extract three animals into three variables
+const [animal1, animal2, animal3] = animals;
+
 
 
 // Example usage
 // console.log(`First Animal: ${firstAnimal} Second Animal: ${secondAnimal}, Third Animal: ${thirdAnimal}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
-
+console.log(`First Animal: ${animal1}, Second Animal: ${animal2}, Third Animal: ${animal3}`);
 // TASK 2: Array Destructuring Exercise 2
 // TODO: Destructure an array of four numbers and log the sum of the first two numbers.
 
 const numbers = [8, 12, 20, 30];
 // TODO: Use array destructuring to extract the first two numbers and calculate their sum
-// const [firstNum, secondNum] = numbers;  // Uncomment this line and complete the TODO
+const [firstNum, secondNum, thirdNum, fourthNum] = numbers;  // Uncomment this line and complete the TODO
 // const sum = firstNum + secondNum;
-
+const sum = secondNum + thirdNum;
 // Example usage
 // console.log(`Sum: ${sum}`);  // Expected output: "Sum: 20"
-
+console.log(`Sum: ${sum}`);
 // Task 3: Get creative and use the ternary operator with your own example
-
+function getPetNickname(breed) {
+  return breed === "cat" ? "Whiskers" : breed === "dog" ? "Buddy" : "Fluffy"
+};
+console.log(getPetNickname("cat"));
+console.log(getPetNickname("dog"));
+console.log(getPetNickname("fish"));
 // Task 4: Get creative and use array destructuring with your own example
+const subjects = ["math", "science", "english", "physics"];
+const [subject1, subject2, subject3, subject4] = subjects;
+
+console.log(`My favorite subject is: ${subject2}`);
