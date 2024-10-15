@@ -18,14 +18,16 @@
 
 // Here is a dog object:
 
-// const dog = {
-//   name: "Max",
-//   breed: "Golden Retriever",
-//   age: 5
-// };
-
+const dog = {
+  name: "Max",
+  breed: "Golden Retriever",
+  age: 5
+};
 // TODO: Use object destructuring to extract the name and breed and age of the dog into three variables. Log the variables.
-
+const { name, breed, age } = dog;
+console.log(dog);
+console.log(age);
+console.log(breed);
 
 // TASK 2: Object Destructuring Exercise 2
 

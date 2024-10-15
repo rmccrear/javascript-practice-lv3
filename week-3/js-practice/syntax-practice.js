@@ -60,10 +60,11 @@ console.log(`First City: ${city1}, Second City: ${city2}, Third City: ${city3}`)
 // TODO: Destructure an array of three animals and log the second and third animals.
 
 const animals = ["Lion", "Tiger", "Elephant"];
-// TODO: Use array destructuring to extract three animals into three variables
+
 const [animal1, animal2, animal3] = animals;
 
-console.log(`First Animal: ${animal1} , Second Animal: ${animal2}, Third Animal: ${animal3}`);
+// TODO: Destructure an array of three animals and log the second and third animals.
+console.log(`The zoo wants the 2nd Animal: ${animal2} and the 3rd Animal: ${animal3}`);
 // Example usage
 // console.log(`First Animal: ${firstAnimal} Second Animal: ${secondAnimal}, Third Animal: ${thirdAnimal}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
 
