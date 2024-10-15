@@ -26,6 +26,14 @@ function WelcomeMessage(props) {
 
 // TODO: Add your own component that uses props to display dynamic data
 // Example component: UserInfo
+function ProductInfo(props) {
+  return (
+    <div className="p-4 m-2 border-2 border-slate">
+      <h2 className="text-lg">{`Product Name: ${props.name}`}</h2>
+      <p>{`Product Price: $${props.price}`}</p>
+    </div>
+  )
+}
 // Pass props such as "name" and "age" to the component and display them.
 
 function PropsDemo() {
@@ -38,10 +46,15 @@ function PropsDemo() {
         <WelcomeMessage name="Bob" />
         <WelcomeMessage name="Carol" />
         TODO: Add a welcome message for Derek, Emily, and Frank using the WelcomeMessage component and a prop.
+        <WelcomeMessage name="Derek" />
+        <WelcomeMessage name="Emily" />
 
       </div>
       <div>
         TODO: Add your own component here demonstrating the use of props.
+        <ProductInfo name="Apple" price=".99" />
+        <ProductInfo name="Eggs" price="5.99" />
+        <ProductInfo name="Milk" price="4.99" />
       </div>
 
     </div>
@@ -71,6 +84,17 @@ function CoinFlip(props) {
 // TODO: Create your own component that uses the ternary operator
 // Example component: Weather
 // Use the ternary operator to display a message based on the props passed (e.g., "temperature").
+function SportsScore(props) {
+  let winner = props.homeScore > props.awayScore ? 'Home Team' : 'Away Team';
+  return (
+    <div className="p-4 m-2 border-2 border-slate">
+      <h1 className="font-bold">Sports Score</h1>
+      <p>Home Score: {props.homeScore}</p>
+      <p>Away Score: {props.awayScore}</p>
+      <p>Winner: <span className="font-bold">{winner}</span></p>
+    </div>
+  )
+}
 
 function TertiaryDemo() {
   return (
@@ -83,6 +107,8 @@ function TertiaryDemo() {
       </div>
       <div className="flex justify-around">
         {/* TODO: Add your own component here */}
+        <SportsScore homeScore="45" awayScore="67" />
+        <SportsScore homeScore="67" awayScore="45" />
       </div>
 
     </div>
@@ -110,6 +136,19 @@ function FruitStore() {
 }
 
 // TODO: Create your own component using array destructuring
+function PetShop() {
+  const pets = ["dogs", "cats", "fish", "reptiles"];
+  const [pet1, pet2, pet3, pet4] = pets;
+  return (
+    <div className="p-4 m-2 border-2 border-slate">
+      <h2 className="font-bold">Pet Shop</h2>
+      <p>Pet 1: {pet1}</p>
+      <p>Pet 2: {pet2}</p>
+      <p>Pet 3: {pet3}</p>
+      <p>Pet 4: {pet4}</p>
+    </div>
+  );
+}
 
 function ArrayDestructureDemo() {
   return (
@@ -121,6 +160,7 @@ function ArrayDestructureDemo() {
       </div>
       <div>
         TODO: Add your own component here to demonstrate array destructuring.
+        <PetShop />
       </div>
 
     </div>
