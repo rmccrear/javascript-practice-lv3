@@ -80,7 +80,8 @@ const dog3 = {
 // Now create a function that takes an object with the following properties: name, age, city. The function should return a string with the following format: "Name: [name], Age: [age], City: [city]".
 
 // TODO: complete the personInfo function
-function personInfo(  ) {
+function personInfo({name, age, city}) {
+  return `Name: ${name}, Age: ${age}, City: ${city}`;
 
 }
 
