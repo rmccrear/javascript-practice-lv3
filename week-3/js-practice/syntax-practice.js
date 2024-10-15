@@ -69,10 +69,10 @@ console.log(`The zoo wants the 2nd Animal: ${animal2} and the 3rd Animal: ${anim
 // console.log(`First Animal: ${firstAnimal} Second Animal: ${secondAnimal}, Third Animal: ${thirdAnimal}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
 
 // TASK 2: Array Destructuring Exercise 2
-// TODO: Destructure an array of four numbers and log the sum of the first two numbers.
+// TODO: Destructure an array of four numbers and log the subtraction of the forth and the third number.
 
 const numbers = [8, 12, 20, 30];
-// TODO: Use array destructuring to extract the first two numbers and calculate their sum
+// TODO: Use array destructuring to extract the last two numbers and calculate their sum
 const [firstNum, secondNum, thirdNum, forthNum] = numbers;  // Uncomment this line and complete the TODO
 
 const sum = forthNum - thirdNum;
