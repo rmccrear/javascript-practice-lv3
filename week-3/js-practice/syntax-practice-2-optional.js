@@ -32,17 +32,18 @@ console.log(breed);
 // TASK 2: Object Destructuring Exercise 2
 
 // Here is a car object:
-
-// const car = {
-//   make: "Toyota",
-//   model: "Camry",
-//   year: 2020,
-//   color: "blue"
-// };
+function carInfo({ make, model }){
+  return `Model: ${model}, Make: ${make}`;
+}
+const car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2020,
+  color: "blue",
+};
 
 // If you don't need all the variables, you can destructure only the properties you need. For example, to extract the make and model of the car:
-
-// const { make, model } = car;
+const { make, model } = car;
 
 // TODO: Use object destructuring to extract only the model and year of the car into two variables. Log the variables.
 
