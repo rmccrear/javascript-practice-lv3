@@ -19,7 +19,7 @@ function WelcomeMessage(props) {
   return (
     <div className="p-4 m-2 border-2 border-slate">
       <h2 className="text-lg">Welcome Message</h2>
-      <p>{`Welcome, ${props.name}!`}</p>
+      <p>Welcome, {props.name}!</p>
     </div>
   );
 }
