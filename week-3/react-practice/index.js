@@ -17,9 +17,9 @@
 // EXAMPLE: Passing a prop to display a welcome message
 function WelcomeMessage(props) {
   return (
-    <div className="p-4 m-2 border-2 border-slate">
+    <div className="p-4 m-2 border-2 border-slate-600 w-1/4">
       <h2 className="text-lg">Welcome Message</h2>
-      <p>{`Welcome, ${props.name}!`}</p>
+      <p className="text-teal-600">{`Welcome, ${props.name}!`}</p>
     </div>
   );
 }
@@ -28,7 +28,7 @@ function WelcomeMessage(props) {
 // Example component: UserInfo
 function ProductInfo(props) {
   return (
-    <div className="p-4 m-2 border-2 border-slate">
+    <div className="p-4 m-2 border-2 border-green-600">
       <h2 className="text-lg">{`Product Name: ${props.name}`}</h2>
       <p>{`Product Price: $${props.price}`}</p>
     </div>
@@ -41,7 +41,7 @@ function PropsDemo() {
     <div className="border-2 border-black rounded size-100">
       <h1 className="text-2xl">Props Demo</h1>
 
-      <div>
+      <div className="flex">
         <WelcomeMessage name="Alice" />
         <WelcomeMessage name="Bob" />
         <WelcomeMessage name="Carol" />
@@ -50,7 +50,7 @@ function PropsDemo() {
         <WelcomeMessage name="Emily" />
 
       </div>
-      <div>
+      <div className="flex">
         TODO: Add your own component here demonstrating the use of props.
         <ProductInfo name="Apple" price=".99" />
         <ProductInfo name="Eggs" price="5.99" />
@@ -87,11 +87,11 @@ function CoinFlip(props) {
 function SportsScore(props) {
   let winner = props.homeScore > props.awayScore ? 'Home Team' : 'Away Team';
   return (
-    <div className="p-4 m-2 border-2 border-slate">
+    <div className="p-4 m-2 border-2 border-blue-300">
       <h1 className="font-bold">Sports Score</h1>
       <p>Home Score: {props.homeScore}</p>
       <p>Away Score: {props.awayScore}</p>
-      <p>Winner: <span className="font-bold">{winner}</span></p>
+      <p>Winner: <span className="font-bold text-green-600">{winner}</span></p>
     </div>
   )
 }
@@ -99,7 +99,7 @@ function SportsScore(props) {
 function TertiaryDemo() {
   return (
     <div className="border-2 border-black rounded size-100">
-      <h1 className="text-2xl">Tertiary Operator</h1>
+      <h1 className="text-2xl">Ternary Operator</h1>
 
       <div className="flex justify-around">
         <CoinFlip coinSide="heads" />
@@ -140,7 +140,7 @@ function PetShop() {
   const pets = ["dogs", "cats", "fish", "reptiles"];
   const [pet1, pet2, pet3, pet4] = pets;
   return (
-    <div className="p-4 m-2 border-2 border-slate">
+    <div className="p-4 m-2 border-2 border-purple-800">
       <h2 className="font-bold">Pet Shop</h2>
       <p>Pet 1: {pet1}</p>
       <p>Pet 2: {pet2}</p>
