@@ -104,10 +104,6 @@ function TernaryDemo() {
 }
 
 
-
-
-  
-
 // TASK 3: Use array destructuring inside your component to extract array values
 
 // Example for Array Destructuring: You can use a prop or declare an array inside your component.
@@ -129,17 +125,35 @@ function FruitStore() {
 }
 
 // TODO: Create your own component using array destructuring
+function ForeignCountries() {
+  let countries = ["Argentina", "Belgium", "Costa Rica", "Denmark"];
+  let [c1, c2, c3, c4] = countries;
+  return (
+    <div className="p-4 m-2 border-2 border-red-600">
+      <h2 className="text-lg">Foreign Countries:</h2> 
+      <p>Country 1: {c1}</p>
+      <p>Country 2: {c2}</p>
+      <p>Country 3: {c3}</p>
+      <p>Country 4: {c4}</p>
+    </div>  
+  );
+}
 
 function ArrayDestructureDemo() {
+  let countries = ["Argentina", "Belgium", "Costa Rica", "Denmark"];
+  let [c1, c2, c3, c4] = countries;
   return (
     <div className="border-2 border-black rounded size-100">
-      <h1 className="text-2xl">Array Destructuring Demo</h1>
-
-      <div>
-        <FruitStore />
-      </div>
       <div>
         TODO: Add your own component here to demonstrate array destructuring.
+      </div>
+      <h1 className="text-2xl">Country Array Destructuring Demo</h1>
+      <p>Country 1: {c1}</p>
+      <p>Country 2: {c2}</p>
+      <p>Country 3: {c3}</p>
+      <p>Country 4: {c4}</p>
+      <div>
+        <FruitStore />
       </div>
 
     </div>
