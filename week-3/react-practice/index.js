@@ -43,7 +43,7 @@ function PropsDemo() {
 
       <div>
         <WelcomeMessage name="Alice" country="America" /> 
-        <UserInfo name="Alice" drink="Truly" /> 
+        <UserInfo name="Alice" drink="Seltzer" /> 
         <WelcomeMessage name="Bob" country="America" />
         <UserInfo name="Bob" drink="Bud" /> 
         <WelcomeMessage name="Carol" country="France" />
@@ -64,7 +64,7 @@ function PropsDemo() {
 
 // TASK 2: Use the ternary operator to display different content
 
-// EXAMPLE: Tertiary operator usage in JSX and variable declaration
+// EXAMPLE: Ternary operator usage in JSX and variable declaration
 // CoinFlip component uses a ternary operator to determine what to show.
 function CoinFlip(props) {
   let announcement = props.coinSide === 'heads' ? "Heads I win!" : "Tails you lose!";
@@ -85,6 +85,18 @@ function CoinFlip(props) {
 // TODO: Create your own component that uses the ternary operator
 // Example component: Weather
 // Use the ternary operator to display a message based on the props passed (e.g., "temperature").
+function ElectionResults(props) {
+  let president = props.redRepublicans > props.blueDemocrats ? 'Republican' : 'Democrat!!';
+  return (
+    <div className="p-4 m-2 border-2 border-blue-700 w-1/4">
+      <h1 className="text-lg">Ternary Presidential Election Results:</h1>
+      <p>Democrats: {props.blueDemocrats}</p>
+      <p>Republicans: {props.redRepublicans}</p>
+      <p>The President will be: {president}</p>
+      </div>
+  );
+}
+
 
 function TernaryDemo() {
   return (
@@ -102,7 +114,6 @@ function TernaryDemo() {
     </div>
   );
 }
-
 
 // TASK 3: Use array destructuring inside your component to extract array values
 
@@ -129,8 +140,8 @@ function ForeignCountries() {
   let countries = ["Argentina", "Belgium", "Costa Rica", "Denmark"];
   let [c1, c2, c3, c4] = countries;
   return (
-    <div className="p-4 m-2 border-2 border-red-600">
-      <h2 className="text-lg">Foreign Countries:</h2> 
+    <div className="p-4 m-2 border-2 border-red-600 w-1/4">
+      <h2 className="text-lg">Foreign Countries Destructuring Array:</h2> 
       <p>Country 1: {c1}</p>
       <p>Country 2: {c2}</p>
       <p>Country 3: {c3}</p>
@@ -140,20 +151,15 @@ function ForeignCountries() {
 }
 
 function ArrayDestructureDemo() {
-  let countries = ["Argentina", "Belgium", "Costa Rica", "Denmark"];
-  let [c1, c2, c3, c4] = countries;
   return (
     <div className="border-2 border-black rounded size-100">
-      <div>
-        TODO: Add your own component here to demonstrate array destructuring.
-      </div>
-      <h1 className="text-2xl">Country Array Destructuring Demo</h1>
-      <p>Country 1: {c1}</p>
-      <p>Country 2: {c2}</p>
-      <p>Country 3: {c3}</p>
-      <p>Country 4: {c4}</p>
+      <h1 className="text-2xl">Array Destructuring Demo</h1>
+
       <div>
         <FruitStore />
+      </div>
+      <div>
+        TODO: Add your own component here to demonstrate array destructuring.
       </div>
 
     </div>
@@ -168,7 +174,12 @@ function App() {
       <hr class="border-blue-500 m-8"/>
       <TernaryDemo />
       <hr class="border-blue-500 m-8"/>
+      <ElectionResults />
+      <hr class="border-blue-500 m-8"/>
       <ArrayDestructureDemo />
+      <hr class="border-blue-500 m-8"/>
+      <ForeignCountries />
+      <hr class="border-blue-500 m-8"/>
     </div>
   );
 }
