@@ -41,7 +41,7 @@ function PropsDemo() {
 
       </div>
       <div>
-        TODO: Add your own component here demonstrating the use of props.
+        TODO: Add your own component here. Add instances of the component you created above here.
       </div>
 
     </div>
@@ -70,19 +70,20 @@ function CoinFlip(props) {
 
 // TODO: Create your own component that uses the ternary operator
 // Example component: Weather
-// Use the ternary operator to display a message based on the props passed (e.g., "temperature").
+// Use the ternary operator to display a message based on the props passed (e.g., "temperature" could determine weather the background is blue or red.)
+// You may make any component you like.
 
-function TertiaryDemo() {
+function TernaryDemo() {
   return (
     <div className="border-2 border-black rounded size-100">
-      <h1 className="text-2xl">Tertiary Operator</h1>
+      <h1 className="text-2xl">Ternary Operator</h1>
 
       <div className="flex justify-around">
         <CoinFlip coinSide="heads" />
         <CoinFlip coinSide="tails" />
       </div>
       <div className="flex justify-around">
-        {/* TODO: Add your own component here */}
+        TODO: Add your own component here. Add instances of the component you created above here.
       </div>
 
     </div>
@@ -120,7 +121,7 @@ function ArrayDestructureDemo() {
         <FruitStore />
       </div>
       <div>
-        TODO: Add your own component here to demonstrate array destructuring.
+        TODO: Add your own component here. Add instances of the component you created above here.
       </div>
 
     </div>
@@ -133,7 +134,7 @@ function App() {
     <div>
       <PropsDemo />
       <hr class="border-blue-500 m-8"/>
-      <TertiaryDemo />
+      <TernaryDemo />
       <hr class="border-blue-500 m-8"/>
       <ArrayDestructureDemo />
     </div>
