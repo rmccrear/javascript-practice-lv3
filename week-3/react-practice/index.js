@@ -20,6 +20,7 @@ function WelcomeMessage(props) {
     <div className="p-4 m-2 border-2 border-slate-600 w-1/4">
       <h2 className="text-lg">Welcome Message</h2>
       <p className="text-teal-600">{`Welcome, ${props.name}!`}</p>
+      <p>{`You are ${props.age} years old!`}</p>
     </div>
   );
 }
@@ -42,12 +43,12 @@ function PropsDemo() {
       <h1 className="text-2xl">Props Demo</h1>
 
       <div className="flex">
-        <WelcomeMessage name="Alice" />
-        <WelcomeMessage name="Bob" />
-        <WelcomeMessage name="Carol" />
+        <WelcomeMessage name="Alice" age="56"/>
+        <WelcomeMessage name="Bob" age="25"/>
+        <WelcomeMessage name="Carol" age="21"/>
         TODO: Add a welcome message for Derek, Emily, and Frank using the WelcomeMessage component and a prop.
-        <WelcomeMessage name="Derek" />
-        <WelcomeMessage name="Emily" />
+        <WelcomeMessage name="Derek" age="23" />
+        <WelcomeMessage name="Emily" age="45"/>
 
       </div>
       <div className="flex">
@@ -149,6 +150,8 @@ function PetShop() {
     </div>
   );
 }
+
+
 
 function ArrayDestructureDemo() {
   return (
